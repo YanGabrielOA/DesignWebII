@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+<h1>Pagina de Videos</h1>
+<!--<h2>Voce esta assistindo o video <%= video %> da playlist <%= playlist %></h2> !-->
+
+
+
+
+
+    <% if(!playlist){ %>
+        <% ListaPlaylist.forEach((playlist) =>{ %>
+            <p><a href="videos/<%= playlist%>"><%= playlist %> </a></p>
+    
+    
+       <% })} %>
+       <% switch(playlist){
+        case 'Pagode':
+        if(!video) {
+        ListaPagode.forEach((video)=>{%>
+            <p><a href="Pagode/<%=video%>"><%= video%> </a></p>
+
+        <% })}} %> 
+    
+
+    
+</body>
+</html>
