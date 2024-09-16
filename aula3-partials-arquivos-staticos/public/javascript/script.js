@@ -1,0 +1,1 @@
+window.alert("SCRIPT IMPORTADO COM SUCESSO")
